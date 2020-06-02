@@ -1,0 +1,10 @@
+encode and extract hidden msg from image 
+cd [folder path]
+$ sudo apt-get install steghide
+$ steghide embed -cf [img file name]  -ef [msg file name] 
+-----------------------------------------------------------------
+                       to extract
+-----------------------------------------------------------------
+ steghide  extract -sf [img file name]
+
+ use more use steghide --help
