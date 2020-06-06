@@ -1,0 +1,12 @@
+download  script file and  go to your downloaded path with terminal and use 
+$ sudo cp [script file name] /usr/local/bin   <==to use from any path
+$ sudo cp mkdir /usr/local/bin
+$ sudo cp chkdevice /usr/local/bin
+$ sudo cp session /usr/local/bin
+$ sudo cp numbers /usr/local/bin
+
+============watch the output===================
+base script       https://youtu.be/u_MDcNaoP28
+math script       https://youtu.be/MfDZrR1GNsE
+make file script  https://youtu.be/iXs7AMgTxH8
+system script     https://youtu.be/aZSLX56ZhXQ
