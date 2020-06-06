@@ -21,6 +21,10 @@ Remote Sync Push: # rsync  <Options>  <Source-Files-Dir>   <User_Name>@<Remote-H
 -h, –human-readable            display the output numbers in a human-readable format
 –progress                                 show the sync progress during transfer
 
+
+https://www.youtube.com/watch?v=ksp8ypUNdXw
+
+
 $ rsync -av --dry-run originalfolder/ backupfolder/
 $ rsync -av originalfolder/ backupfolder/
 $ rsync -r originalfolder/ backupfolder/
