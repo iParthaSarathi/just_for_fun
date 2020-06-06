@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#specific info about session
+
+date
+firefox&
+uptime -p
+

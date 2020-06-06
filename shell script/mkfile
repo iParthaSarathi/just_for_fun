@@ -1,0 +1,48 @@
+#!/bin/bash
+#create file if not exist by mr. robot
+echo -n "Enter a File name : "
+read filename
+filepath="$PWD/$filename"
+if [ -e "$filepath" ]; then
+       echo -n  "File is exist want to view enter 1, for edit enter 2 and for reset permission enter 3 : "
+	read optionex
+	if [ "$optionex" = 1 ]; then
+		cat "$filepath"
+	elif [ "$optionex" =  2 ]; then
+		nano  "$filepath"
+	elif [ "$optionex" = 3 ]; then
+		echo "Set file permission (000-777) default it will set 777 "
+	echo "Enter file Permission : "
+	read permissionex
+		if [ "$permissionex" -le 777 -a "$permissionex" -ge 000 ]; then
+		echo "your file permission is $permissionex great you can cange it letter"
+		chmod "$permissionex" "$filepath"
+		else
+		echo "your file permission is rwx"
+		chmod 777 "$filepathex"
+		fi
+	else
+		echo "Thanks for use this script"
+	fi
+else
+   touch "$filepath"
+	echo "Set file permission (000-777) default it will set 777 "
+	echo "Enter file Permission : "
+	read permission
+		if [ "$permission" -le 777 -a "$permission" -ge 000 ]; then
+		echo "your file permission is $permission great you can cange it letter"
+		chmod "$permission" "$filepath"
+		else
+		echo "your file permission is rwx"
+		chmod 777 "$filepath"
+		fi
+	echo -n  "File is created want to view enter 1 or for edit enter 2 : "
+	read option
+		if [ "$option" = 1 ]; then
+			cat "$filepath"
+		elif [ "$option" =  2 ]; then
+			nano  "$filepath"
+		else
+			echo "Thanks for use this script"
+		fi
+fi

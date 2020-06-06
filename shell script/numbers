@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo -n  $USER please enter a number :
+read number
+echo -n $USER please enter second number :
+read secnumber
+sum=$(($number + $secnumber))
+echo  sum of $number  and   $secnumber is  $sum
+#create a output and update log file everytime  tis acript runs
+echo $(id):$(date +%D) :$sum >> useradd.log
