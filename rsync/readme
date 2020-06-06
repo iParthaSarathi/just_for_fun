@@ -25,3 +25,7 @@ $ rsync -av --dry-run originalfolder/ backupfolder/
 $ rsync -av originalfolder/ backupfolder/
 $ rsync -r originalfolder/ backupfolder/
 $ rsync -av --delete --dry-run originalfolder/ backupfolder/
+
+
+credit
+https://www.linuxtechi.com/rsync-command-examples-linux/
