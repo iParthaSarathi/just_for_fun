@@ -1,0 +1,20 @@
+sudo apt-get install git
+git --version                                      [Check for git installation and version]
+git config --global user.email "your email id"
+git config --global user.name "your name"
+git config --list                                  [make sure you have set your name & email]
+
+
+sudo ssh-keygen -o -t rsa -C "yourgmail"           <-- enter file name in my case it ssh and give a passphrase 
+eval "$(ssh-agent -s)"                             <-active ssh agent
+sudo chmod 777 sshfilename
+ssh-add sshfilename                                       <-it will ask for passphrase
+
+
+
+--------------------------------------------------------------------------
+copy your ssh.pub key and open your github account and go to
+Settings > SSH and GPG keys > New SSH key        <-Enter title and paste the key from clipboard and save it.
+---------------------------------------------------------------------------
+git init                                              <-add afolder for git access
+git clone git@github.com:USERNAME/REPOSITORY.git      <- to  clone in tour local
