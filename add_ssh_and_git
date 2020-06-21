@@ -24,3 +24,11 @@ git status
 git add.                                             <-add all file for commit
 git commit -m 'my first commit'                      <-commit all file
 git push                                             <-to add all changes in gitub
+
+
+
+
+
+
+
+
